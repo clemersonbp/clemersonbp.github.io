@@ -38,29 +38,6 @@ clemersonbp.github.io/
     └── img/            # Imagens do projeto
 ```
 
-## 🚀 Como Executar Localmente
-
-1. Clone o repositório:
-```bash
-git clone https://github.com/clemersonbp/clemersonbp.github.io.git
-```
-
-2. Navegue até o diretório:
-```bash
-cd clemersonbp.github.io
-```
-
-3. Abra o arquivo `index.html` no navegador ou use um servidor local:
-```bash
-# Com Python
-python -m http.server 8000
-
-# Com Node.js (npx)
-npx serve
-```
-
-4. Acesse `http://localhost:8000` no navegador.
-
 ## 📄 Seções do Site
 
 - **Sobre** - Apresentação pessoal
@@ -68,18 +45,6 @@ npx serve
 - **Formação** - Formação acadêmica
 - **Tecnologias** - Stack de desenvolvimento
 - **Contato** - Informações de contato
-
-## 🎨 Personalização do Tema
-
-O site utiliza CSS Variables para fácil customização. As principais variáveis estão em `:root` no arquivo `styles.css`:
-
-```css
-:root {
-    --bg-primary: #ffffff;
-    --accent: #6366f1;
-    /* ... outras variáveis */
-}
-```
 
 ## 📝 Licença
 
