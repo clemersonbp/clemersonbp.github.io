@@ -179,7 +179,7 @@ button {
     font-weight: 500;
     color: var(--text-secondary);
     border-radius: var(--radius-full);
-    transition: color var(--transition-fast), background-color var(--transition-fast);
+    transition: color var(--transition-normal), background-color var(--transition-normal);
 }
 
 .nav-link:hover {
@@ -452,22 +452,19 @@ button {
 .timeline {
     max-width: 800px;
     margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.timeline:last-child {
+    margin-bottom: 0;
 }
 
 .timeline-item {
     position: relative;
-    padding-left: 32px;
-    padding-bottom: 32px;
 }
 
 .timeline-item::before {
-    content: '';
-    position: absolute;
-    left: 6px;
-    top: 24px;
-    bottom: 0;
-    width: 2px;
-    background: var(--border);
+    display: none;
 }
 
 .timeline-item:last-child::before {
@@ -475,19 +472,11 @@ button {
 }
 
 .timeline-marker {
-    position: absolute;
-    left: 0;
-    top: 8px;
-    width: 14px;
-    height: 14px;
-    background: var(--accent);
-    border-radius: 50%;
-    border: 3px solid var(--bg-primary);
-    box-shadow: 0 0 0 3px var(--accent-light);
+    display: none;
 }
 
 .timeline-content {
-    margin-left: 16px;
+    margin: 0;
 }
 
 .timeline-header {
@@ -591,9 +580,9 @@ button {
    =================================== */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    max-width: 900px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -802,6 +791,10 @@ button {
         display: flex;
     }
 
+    .hero {
+        padding-top: calc(var(--header-height) + 32px);
+    }
+
     .section {
         padding: 80px 0;
     }
@@ -826,9 +819,33 @@ button {
         width: 100%;
     }
 
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     .footer-content {
         flex-direction: column;
         text-align: center;
+    }
+
+    /* Desativa scroll-snap no mobile */
+    html {
+        scroll-snap-type: none;
+    }
+
+    .scroll-section {
+        scroll-snap-align: none;
+        scroll-snap-stop: normal;
+    }
+
+    /* Esconde os dots de navegação no mobile */
+    .scroll-nav {
+        display: none;
+    }
+
+    /* Mais espaço antes do footer na seção de contato */
+    #contato {
+        padding-bottom: calc(80px + var(--footer-height));
     }
 }
 
@@ -970,24 +987,11 @@ button {
    Scroll Snap Mobile Adjustments
    =================================== */
 @media (max-width: 768px) {
-    .scroll-nav {
-        right: 12px;
-        padding: 12px 6px;
-        gap: 10px;
-    }
 
-    .scroll-nav-dot {
-        width: 10px;
-        height: 10px;
-    }
-
-    .scroll-nav-tooltip {
-        display: none;
-    }
-
-    /* Disable mandatory scroll snap on mobile for better UX */
-    html {
-        scroll-snap-type: y proximity;
+    /* Oculta navegação por dots e barra de progresso no mobile */
+    .scroll-nav,
+    .scroll-progress {
+        display: none !important;
     }
 }
 
