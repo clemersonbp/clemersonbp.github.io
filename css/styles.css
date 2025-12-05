@@ -30,18 +30,25 @@
 }
 
 [data-theme="dark"] {
-    --bg-primary: #0f172a;
-    --bg-secondary: #1e293b;
-    --bg-tertiary: #334155;
-    --text-primary: #f8fafc;
-    --text-secondary: #cbd5e1;
-    --text-tertiary: #64748b;
-    --accent: #818cf8;
-    --accent-hover: #a5b4fc;
-    --accent-light: rgba(129, 140, 248, 0.15);
-    --border: #334155;
-    --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
-    --card-shadow-hover: 0 10px 40px rgba(0, 0, 0, 0.4);
+    /* Ultra Dark Background */
+    --bg-primary: #0a0a0b;
+    --bg-secondary: #111113;
+    --bg-tertiary: #1a1a1d;
+
+    /* Refined Text Colors */
+    --text-primary: #f0f0f2;
+    --text-secondary: #a0a0a8;
+    --text-tertiary: #5a5a65;
+
+    /* Elegant Accent - Violet/Purple */
+    --accent: #a78bff;
+    --accent-hover: #c4b5fd;
+    --accent-light: rgba(167, 139, 250, 0.12);
+
+    /* Borders & Shadows - Lighter */
+    --border: #252528;
+    --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --card-shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
 /* ===================================
@@ -138,7 +145,8 @@ button {
 }
 
 [data-theme="dark"] .header {
-    background: rgba(15, 23, 42, 0.8);
+    background: rgba(10, 10, 11, 0.85);
+    border-bottom: 1px solid rgba(167, 139, 250, 0.1);
 }
 
 .nav {
@@ -692,7 +700,8 @@ button {
 }
 
 [data-theme="dark"] .footer {
-    background: rgba(15, 23, 42, 0.8);
+    background: rgba(10, 10, 11, 0.85);
+    border-top: 1px solid rgba(167, 139, 250, 0.1);
 }
 
 .footer-content {
@@ -872,7 +881,8 @@ button {
 }
 
 [data-theme="dark"] .scroll-nav {
-    background: rgba(15, 23, 42, 0.3);
+    background: rgba(10, 10, 11, 0.6);
+    border: 1px solid rgba(167, 139, 250, 0.15);
 }
 
 .scroll-nav-dot {
