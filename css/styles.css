@@ -936,48 +936,98 @@ strong {
 /* ===================================
    Tecnologias
    =================================== */
-.skills-grid {
+.stack-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.stack-card {
+    display: flex;
+    flex-direction: column;
+    padding: 28px;
+}
+
+.stack-card:hover {
+    border-color: var(--border-strong);
+    box-shadow: var(--shadow-md);
+}
+
+.stack-head {
+    display: flex;
+    align-items: center;
     gap: 12px;
 }
 
-.skill-card {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    padding: 18px 20px;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-sm);
-    transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
-}
-
-.skill-card:hover {
-    border-color: var(--border-strong);
-    box-shadow: var(--shadow-md);
-    transform: translateY(-2px);
-}
-
-.skill-icon {
-    width: 32px;
-    height: 32px;
+.stack-icon {
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
     flex-shrink: 0;
-    transition: transform var(--transition);
+    border-radius: 10px;
+    background: var(--accent-soft);
+    color: var(--accent);
 }
 
-.skill-card:hover .skill-icon {
-    transform: scale(1.08);
+.stack-title {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.015em;
 }
 
-[data-theme="dark"] .skill-icon-next {
-    filter: invert(1);
-}
-
-.skill-name {
+.stack-description {
+    margin-top: 12px;
     font-size: 15px;
+    color: var(--text-muted);
+    text-wrap: pretty;
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.tech {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 12px 7px 9px;
+    font-size: 14px;
     font-weight: 500;
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    transition: border-color var(--transition-fast), background-color var(--transition-fast),
+        transform var(--transition-fast);
+}
+
+.tech:hover {
+    border-color: var(--border-strong);
+    background: var(--surface);
+    transform: translateY(-1px);
+}
+
+/* Logos do Simple Icons usam a cor da marca; os genéricos (Lucide) usam a cor de destaque */
+.tech-logo {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    fill: var(--c, currentColor);
+}
+
+.tech-logo.icon {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 2;
+}
+
+/* Logos de cor escura ficam ilegíveis no tema escuro */
+[data-theme="dark"] .tech-logo[style*="#4169E1"],
+[data-theme="dark"] .tech-logo[style*="#3178C6"] {
+    filter: brightness(1.35);
 }
 
 .skills-more {
@@ -1196,9 +1246,12 @@ a.contact-card:hover .contact-arrow {
         min-height: auto;
     }
 
-    .skills-grid,
     .contact-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stack-grid {
+        grid-template-columns: 1fr;
     }
 
     .project,
@@ -1338,22 +1391,13 @@ a.contact-card:hover .contact-arrow {
         width: 100%;
     }
 
-    .skills-grid {
-        gap: 8px;
+    .stack-card {
+        padding: 22px;
     }
 
-    .skill-card {
-        padding: 14px;
-        gap: 10px;
-    }
-
-    .skill-icon {
-        width: 26px;
-        height: 26px;
-    }
-
-    .skill-name {
-        font-size: 14px;
+    .tech {
+        font-size: 13px;
+        padding: 6px 10px 6px 8px;
     }
 
     .contact-grid {
