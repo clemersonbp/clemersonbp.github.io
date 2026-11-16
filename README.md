@@ -11,19 +11,19 @@ Site pessoal e portfólio profissional desenvolvido com HTML, CSS e JavaScript p
 
 ## ✨ Funcionalidades
 
-- 🌓 **Tema claro/escuro** - Alternância de tema com persistência no localStorage
-- 📱 **Design responsivo** - Adaptável a qualquer tamanho de tela
-- ⚡ **Performance otimizada** - Código limpo e leve, sem dependências pesadas
-- 🎨 **UI moderna** - Design minimalista com animações suaves
-- 🔗 **Navegação suave** - Scroll suave entre as seções
+- 🌓 **Tema claro/escuro** - Segue o sistema, com escolha manual persistida no localStorage e sem "flash" ao carregar
+- 📱 **Design responsivo** - Adaptável a qualquer tamanho de tela, com menu mobile acessível
+- ⚡ **Performance otimizada** - Sem dependências de JavaScript externas; ícones SVG embutidos
+- 🎨 **UI minimalista** - Tipografia Geist, animações de entrada suaves (respeitando `prefers-reduced-motion`)
+- 🧭 **Navegação fluida** - Header que destaca a seção atual e botão para copiar o e-mail
 
 ## 🛠️ Tecnologias Utilizadas
 
 - **HTML5** - Estrutura semântica
 - **CSS3** - Estilização com CSS Variables e Flexbox/Grid
 - **JavaScript** - Interatividade e funcionalidades
-- **[Lucide Icons](https://lucide.dev/)** - Ícones modernos e leves
-- **[Google Fonts](https://fonts.google.com/)** - Tipografia Inter
+- **[Lucide Icons](https://lucide.dev/)** - Ícones (embutidos como SVG)
+- **[Google Fonts](https://fonts.google.com/)** - Tipografia Geist e Geist Mono
 
 ## 📂 Estrutura do Projeto
 
@@ -36,11 +36,13 @@ clemersonbp.github.io/
 │   └── scripts.js      # Scripts de interatividade
 └── assets/
     └── img/            # Imagens do projeto
+        └── projetos/   # Capturas de tela dos projetos
 ```
 
 ## 📄 Seções do Site
 
-- **Sobre** - Apresentação pessoal
+- **Início** - Apresentação pessoal
+- **Projetos** - [BladesPro](https://bladespro.com.br) e [My Baby List](https://mybabylist.cloud), produtos em produção
 - **Experiência** - Trajetória profissional
 - **Formação** - Formação acadêmica
 - **Tecnologias** - Stack de desenvolvimento
