@@ -17,10 +17,11 @@ a stack com que trabalho no dia a dia.
 
 | Projeto | Descrição | Stack principal |
 | --- | --- | --- |
+| [**EvolutioCore**](https://evolutiocore.com.br) | SaaS para personal trainers e consultorias online: painel web do treinador e app mobile do aluno com a marca do treinador, com treinos, dietas, check-ins, avaliações e chat em tempo real. Segurança com RLS testada por pgTAP e adequação à LGPD. | Next.js, React Native (Expo), Supabase, PostgreSQL, Zod, Docker |
 | [**BladesPro**](https://bladespro.com.br) | SaaS de gestão para barbearias, multi-tenant, com agenda online, assinaturas recorrentes via Stripe, permissões por perfil e relatórios de faturamento. | Next.js, NestJS, Prisma, PostgreSQL, Stripe, Docker |
 | [**My Baby List**](https://mybabylist.cloud) | Listas de presentes para chá de bebê, com reserva em tempo real, login com Google, ativação paga via Mercado Pago e privacidade dos presenteadores. | Next.js, React, Prisma, PostgreSQL, NextAuth, Mercado Pago |
 
-Os dois produtos foram desenvolvidos do zero por mim, do banco de dados ao deploy, e rodam
+Os três produtos foram desenvolvidos do zero por mim, do banco de dados ao deploy, e rodam
 em uma VPS própria com Docker e CI/CD pelo GitHub Actions.
 
 ## Conteúdo do site
@@ -29,7 +30,7 @@ em uma VPS própria com Docker e CI/CD pelo GitHub Actions.
 - **Projetos:** detalhes, funcionalidades e tecnologias de cada produto
 - **Experiência:** trajetória profissional
 - **Formação:** formação acadêmica
-- **Tecnologias:** stack organizada por área (frontend, backend e dados, pagamentos e integrações, DevOps e infraestrutura)
+- **Tecnologias:** stack organizada por área (frontend e mobile, backend e dados, pagamentos e integrações, DevOps e infraestrutura)
 - **Contato:** e-mail com cópia em um clique, LinkedIn e GitHub
 
 ## Destaques técnicos
@@ -60,7 +61,7 @@ clemersonbp.github.io/
     └── img/
         ├── profile_clemerson.jpg
         ├── preview.png   # Captura usada neste README
-        └── projetos/     # Capturas de tela do BladesPro e do My Baby List
+        └── projetos/     # Capturas de tela do EvolutioCore, do BladesPro e do My Baby List
 ```
 
 ## Executando localmente

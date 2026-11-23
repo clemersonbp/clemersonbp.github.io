@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Clémerson B. Pessalli | Desenvolvedor Fullstack</title>
     <meta name="description"
-        content="Clémerson Bourscheid Pessalli — Desenvolvedor Fullstack em São Leopoldo, RS. Experiência com e-commerce, React, Next.js, NestJS, TypeScript e PostgreSQL. Criador do BladesPro e do My Baby List." />
+        content="Clémerson Bourscheid Pessalli — Desenvolvedor Fullstack em São Leopoldo, RS. Experiência com e-commerce, React, Next.js, React Native, NestJS, Supabase, TypeScript e PostgreSQL. Criador do EvolutioCore, do BladesPro e do My Baby List." />
     <meta name="author" content="Clémerson B. Pessalli" />
     <meta name="theme-color" content="#fafaf9" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)" />
@@ -18,7 +18,7 @@
     <meta property="og:url" content="https://clemersonbp.github.io/" />
     <meta property="og:title" content="Clémerson B. Pessalli | Desenvolvedor Fullstack" />
     <meta property="og:description"
-        content="Desenvolvedor Fullstack com experiência em e-commerce e produtos SaaS com React, Next.js, NestJS e TypeScript." />
+        content="Desenvolvedor Fullstack com experiência em e-commerce e produtos SaaS web e mobile com React, Next.js, React Native, NestJS e TypeScript." />
     <meta property="og:image" content="https://clemersonbp.github.io/assets/img/profile_clemerson.jpg" />
     <meta name="twitter:card" content="summary" />
 
@@ -93,6 +93,12 @@
             <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3" /><path d="M3 5v14a9 3 0 0 0 18 0V5" /><path d="M3 12a9 3 0 0 0 18 0" /></symbol>
             <symbol id="i-card" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="5" rx="2" /><path d="M2 10h20" /></symbol>
             <symbol id="i-server" viewBox="0 0 24 24"><rect width="20" height="8" x="2" y="2" rx="2" /><rect width="20" height="8" x="2" y="14" rx="2" /><path d="M6 6h.01M6 18h.01" /></symbol>
+            <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></symbol>
+            <symbol id="i-bell" viewBox="0 0 24 24"><path d="M10.268 21a2 2 0 0 0 3.464 0" /><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" /></symbol>
+            <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" /></symbol>
+            <symbol id="i-message" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /></symbol>
+            <symbol id="si-supabase" viewBox="0 0 24 24"><path d="M11.9 1.036c-.015-.986-1.26-1.41-1.874-.637L.764 12.05C-.33 13.427.65 15.455 2.409 15.455h9.579l.113 7.51c.014.985 1.259 1.408 1.873.636l9.262-11.653c1.093-1.375.113-3.403-1.645-3.403h-9.642z" /></symbol>
+            <symbol id="si-expo" viewBox="0 0 24 24"><path d="M0 20.084c.043.53.23 1.063.718 1.778.58.849 1.576 1.315 2.303.567.49-.505 5.794-9.776 8.35-13.29a.761.761 0 011.248 0c2.556 3.514 7.86 12.785 8.35 13.29.727.748 1.723.282 2.303-.567.57-.835.728-1.42.728-2.046 0-.426-8.26-15.798-9.092-17.078-.8-1.23-1.044-1.498-2.397-1.542h-1.032c-1.353.044-1.597.311-2.398 1.542C8.267 3.991.33 18.758 0 19.77Z" /></symbol>
         </defs>
     </svg>
 
@@ -183,11 +189,58 @@
                 <header class="section-header reveal">
                     <span class="section-index">01</span>
                     <h2 class="section-title">Projetos</h2>
-                    <p class="section-subtitle">Produtos que criei do zero e mantenho em produção, com pagamentos,
-                        autenticação e deploy automatizado.</p>
+                    <p class="section-subtitle">Produtos web e mobile que criei do zero e mantenho em produção, com
+                        pagamentos, autenticação, segurança no banco e deploy automatizado.</p>
                 </header>
 
                 <div class="projects">
+                    <article class="project card reveal" style="--brand: #6366f1">
+                        <a href="https://evolutiocore.com.br" target="_blank" rel="noopener" class="project-media"
+                            aria-label="Abrir o site do EvolutioCore">
+                            <div class="browser">
+                                <div class="browser-bar" aria-hidden="true">
+                                    <span></span><span></span><span></span>
+                                    <span class="browser-url">evolutiocore.com.br</span>
+                                </div>
+                                <img src="assets/img/projetos/evolutiocore.png" width="1280" height="1360" loading="lazy"
+                                    decoding="async" alt="Página inicial do EvolutioCore: sua consultoria online, no ritmo da evolução de cada aluno" />
+                            </div>
+                        </a>
+
+                        <div class="project-content">
+                            <p class="project-meta">
+                                <span class="status-dot" aria-hidden="true"></span>
+                                SaaS · Web e mobile
+                            </p>
+                            <h3 class="project-title">EvolutioCore</h3>
+                            <p class="project-description">
+                                Plataforma para personal trainers e consultorias online acompanharem seus alunos. O treinador usa o painel web e o aluno usa um app com a marca do treinador, tudo em um monorepo com código compartilhado.
+                            </p>
+                            <ul class="project-features">
+                                <li><svg class="icon"><use href="#i-check" /></svg><span>Painel do treinador em Next.js e app do aluno em React Native com Expo</span></li>
+                                <li><svg class="icon"><use href="#i-check" /></svg><span>Treinos com vídeo, dietas com cálculo de macros, check-ins, avaliações físicas e chat em tempo real</span></li>
+                                <li><svg class="icon"><use href="#i-check" /></svg><span>Segurança no banco: Row Level Security em todas as tabelas, validada por testes pgTAP no CI</span></li>
+                                <li><svg class="icon"><use href="#i-check" /></svg><span>LGPD: aceite registrado, exclusão de conta e dados de saúde protegidos</span></li>
+                                <li><svg class="icon"><use href="#i-check" /></svg><span>Supabase self-hosted em Docker na VPS, com push notifications e backup no Cloudflare R2</span></li>
+                            </ul>
+                            <ul class="tags" aria-label="Tecnologias do projeto">
+                                <li>Next.js</li>
+                                <li>React Native</li>
+                                <li>Expo</li>
+                                <li>TypeScript</li>
+                                <li>Supabase</li>
+                                <li>PostgreSQL</li>
+                                <li>Zod</li>
+                                <li>Tailwind</li>
+                                <li>Docker</li>
+                            </ul>
+                            <a href="https://evolutiocore.com.br" target="_blank" rel="noopener" class="btn btn-primary project-link">
+                                Visitar evolutiocore.com.br
+                                <svg class="icon"><use href="#i-arrow-up-right" /></svg>
+                            </a>
+                        </div>
+                    </article>
+
                     <article class="project card reveal" style="--brand: #d4af37">
                         <a href="https://bladespro.com.br" target="_blank" rel="noopener" class="project-media"
                             aria-label="Abrir o site do BladesPro">
@@ -389,12 +442,14 @@
                     <article class="card stack-card reveal">
                         <div class="stack-head">
                             <span class="stack-icon" aria-hidden="true"><svg class="icon"><use href="#i-monitor" /></svg></span>
-                            <h3 class="stack-title">Frontend</h3>
+                            <h3 class="stack-title">Frontend & mobile</h3>
                         </div>
-                        <p class="stack-description">Interfaces rápidas e componentizadas, de e-commerces de grandes marcas a produtos SaaS.</p>
+                        <p class="stack-description">Interfaces rápidas e componentizadas, de e-commerces de grandes marcas a produtos SaaS e apps mobile.</p>
                         <ul class="tech-list">
                             <li class="tech"><svg class="tech-logo" style="--c: #61DAFB" aria-hidden="true"><use href="#si-react" /></svg>React</li>
                             <li class="tech"><svg class="tech-logo" aria-hidden="true"><use href="#si-nextdotjs" /></svg>Next.js</li>
+                            <li class="tech"><svg class="tech-logo" style="--c: #61DAFB" aria-hidden="true"><use href="#si-react" /></svg>React Native</li>
+                            <li class="tech"><svg class="tech-logo" aria-hidden="true"><use href="#si-expo" /></svg>Expo</li>
                             <li class="tech"><svg class="tech-logo" style="--c: #3178C6" aria-hidden="true"><use href="#si-typescript" /></svg>TypeScript</li>
                             <li class="tech"><svg class="tech-logo" style="--c: #F7DF1E" aria-hidden="true"><use href="#si-javascript" /></svg>JavaScript</li>
                             <li class="tech"><svg class="tech-logo" style="--c: #06B6D4" aria-hidden="true"><use href="#si-tailwindcss" /></svg>Tailwind CSS</li>
@@ -410,12 +465,14 @@
                             <span class="stack-icon" aria-hidden="true"><svg class="icon"><use href="#i-database" /></svg></span>
                             <h3 class="stack-title">Backend & dados</h3>
                         </div>
-                        <p class="stack-description">APIs, autenticação e modelagem de dados, com isolamento multi-tenant e permissões por perfil.</p>
+                        <p class="stack-description">APIs, autenticação e modelagem de dados, com isolamento multi-tenant, permissões por perfil e regras de acesso no próprio banco.</p>
                         <ul class="tech-list">
                             <li class="tech"><svg class="tech-logo" style="--c: #5FA04E" aria-hidden="true"><use href="#si-nodedotjs" /></svg>Node.js</li>
                             <li class="tech"><svg class="tech-logo" style="--c: #E0234E" aria-hidden="true"><use href="#si-nestjs" /></svg>NestJS</li>
+                            <li class="tech"><svg class="tech-logo" style="--c: #3FCF8E" aria-hidden="true"><use href="#si-supabase" /></svg>Supabase</li>
                             <li class="tech"><svg class="tech-logo" aria-hidden="true"><use href="#si-prisma" /></svg>Prisma</li>
                             <li class="tech"><svg class="tech-logo" style="--c: #4169E1" aria-hidden="true"><use href="#si-postgresql" /></svg>PostgreSQL</li>
+                            <li class="tech"><svg class="icon tech-logo" aria-hidden="true"><use href="#i-shield" /></svg>Row Level Security</li>
                             <li class="tech"><svg class="icon tech-logo" aria-hidden="true"><use href="#i-lock" /></svg>NextAuth</li>
                             <li class="tech"><svg class="tech-logo" aria-hidden="true"><use href="#si-jsonwebtokens" /></svg>JWT</li>
                             <li class="tech"><svg class="tech-logo" style="--c: #DD2C00" aria-hidden="true"><use href="#si-firebase" /></svg>Firebase</li>
@@ -427,12 +484,14 @@
                             <span class="stack-icon" aria-hidden="true"><svg class="icon"><use href="#i-card" /></svg></span>
                             <h3 class="stack-title">Pagamentos & integrações</h3>
                         </div>
-                        <p class="stack-description">Assinaturas e pagamentos com confirmação por webhook, login social e e-mails transacionais.</p>
+                        <p class="stack-description">Assinaturas e pagamentos com confirmação por webhook, login social, chat em tempo real, push e e-mails transacionais.</p>
                         <ul class="tech-list">
                             <li class="tech"><svg class="tech-logo" style="--c: #635BFF" aria-hidden="true"><use href="#si-stripe" /></svg>Stripe</li>
                             <li class="tech"><svg class="tech-logo" style="--c: #00B1EA" aria-hidden="true"><use href="#si-mercadopago" /></svg>Mercado Pago</li>
                             <li class="tech"><svg class="tech-logo" style="--c: #4285F4" aria-hidden="true"><use href="#si-google" /></svg>Google OAuth</li>
                             <li class="tech"><svg class="icon tech-logo" aria-hidden="true"><use href="#i-webhook" /></svg>Webhooks</li>
+                            <li class="tech"><svg class="icon tech-logo" aria-hidden="true"><use href="#i-message" /></svg>Realtime</li>
+                            <li class="tech"><svg class="icon tech-logo" aria-hidden="true"><use href="#i-bell" /></svg>Push notifications</li>
                             <li class="tech"><svg class="icon tech-logo" aria-hidden="true"><use href="#i-mail" /></svg>E-mail SMTP</li>
                         </ul>
                     </article>
@@ -441,11 +500,12 @@
                             <span class="stack-icon" aria-hidden="true"><svg class="icon"><use href="#i-server" /></svg></span>
                             <h3 class="stack-title">DevOps & infraestrutura</h3>
                         </div>
-                        <p class="stack-description">Deploy automatizado com CI/CD, containers, backups e HTTPS na minha própria VPS.</p>
+                        <p class="stack-description">Deploy automatizado com CI/CD, containers, backups externos, varredura de segredos e HTTPS na minha própria VPS.</p>
                         <ul class="tech-list">
                             <li class="tech"><svg class="tech-logo" style="--c: #2496ED" aria-hidden="true"><use href="#si-docker" /></svg>Docker</li>
                             <li class="tech"><svg class="tech-logo" style="--c: #2088FF" aria-hidden="true"><use href="#si-githubactions" /></svg>GitHub Actions</li>
                             <li class="tech"><svg class="tech-logo" style="--c: #1F88C0" aria-hidden="true"><use href="#si-caddy" /></svg>Caddy</li>
+                            <li class="tech"><svg class="icon tech-logo" aria-hidden="true"><use href="#i-cloud" /></svg>Cloudflare R2</li>
                             <li class="tech"><svg class="tech-logo" style="--c: #E95420" aria-hidden="true"><use href="#si-ubuntu" /></svg>Linux (VPS)</li>
                             <li class="tech"><svg class="tech-logo" style="--c: #F05032" aria-hidden="true"><use href="#si-git" /></svg>Git</li>
                         </ul>
@@ -457,6 +517,18 @@
                     <ul class="tags">
                         <li>Vite</li>
                         <li>Zod</li>
+                        <li>Vitest</li>
+                        <li>pgTAP</li>
+                        <li>pg_cron</li>
+                        <li>Expo Router</li>
+                        <li>Reanimated</li>
+                        <li>Radix UI</li>
+                        <li>Framer Motion</li>
+                        <li>Passport</li>
+                        <li>Monorepo (npm workspaces)</li>
+                        <li>Envoy</li>
+                        <li>Gitleaks</li>
+                        <li>Dependabot</li>
                         <li>React Query</li>
                         <li>ESLint</li>
                         <li>Prettier</li>
